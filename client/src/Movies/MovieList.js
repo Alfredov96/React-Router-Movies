@@ -14,7 +14,7 @@ const MovieList = props => {
           console.error('Server Error', error);
         });
     }
-    
+  
     getMovies();
   }, []);
   
@@ -23,7 +23,7 @@ const MovieList = props => {
       {movies.map(movie => (
         <MovieDetails key={movie.id} movie={movie} />
       ))}
-    </div>
+    </div> 
   );
 }
 
